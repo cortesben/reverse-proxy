@@ -1,0 +1,30 @@
+{
+  "name": "cms-node",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node src/bin/www",
+    "start:prod": "node src/bin/www",
+    "dev": "DEBUG=cms-node:* npm start",
+    "dev:start": "nodemon npm run dev",
+    "test:server": "mocha ./src/tests --recursive --exit"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "dotenv": "^6.1.0",
+    "express": "~4.16.0",
+    "express-handlebars": "^3.0.0",
+    "http-errors": "~1.6.2",
+    "morgan": "~1.9.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.5",
+    "supertest": "^3.3.0"
+  },
+  "engines": {
+    "node": "^10.13.0"
+  }
+}
