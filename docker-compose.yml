@@ -1,7 +1,13 @@
 version: '3'
 
 services:
-  node-cms:
-    build: ./src
-    volumes:
-      - ./src:~/
+
+  reverse-proxy:
+    image: nginx
+    ports:
+      - 8080:80
+
+  node-server:
+    image: businessinsider/cms-node:oneSPA
+    ports:
+      - 8881:80
