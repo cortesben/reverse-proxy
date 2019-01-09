@@ -3,7 +3,7 @@ version: '3'
 services:
 
   reverse-proxy:
-    image: cortesben/cent-node-nginx-vim:latest
+    image: nginx
     build:
       context: .
       dockerfile: Dockerfile

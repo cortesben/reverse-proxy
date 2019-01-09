@@ -1,6 +1,6 @@
 FROM cortesben/cent-node-nginx-vim:latest
 
-ENTRYPOINT [ "service" ]
+ENTRYPOINT [ "nginx" ]
 
 # parameters passing to main command
-CMD [ "nginx", "start" ]
+CMD [ "-g", "daemon off;" ]
