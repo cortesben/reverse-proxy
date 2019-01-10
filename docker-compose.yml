@@ -3,7 +3,6 @@ version: '3'
 services:
 
   reverse-proxy:
-    image: nginx
     build:
       context: .
       dockerfile: Dockerfile
